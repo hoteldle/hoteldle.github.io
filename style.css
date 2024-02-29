@@ -37,6 +37,7 @@ p {
 }
 
 .Box0 {
+    position: relative;
     font-size: 15px;
     border: 1px solid white;
     display: grid;
@@ -47,6 +48,7 @@ p {
 }
 
 .Box1 {
+    position: relative;
     font-size: 15px;
     border: 1px solid white;
     display: grid;
