@@ -58,12 +58,12 @@ function check(mainList,userIndex,randomIndex,output,name){
             if(mainList[userIndex][i] != "Unknown" &&  mainList[randomIndex][i] != "Unknown"){
                 if(mainList[randomIndex][i] == "A Lot" || parseInt(mainList[userIndex][i]) < parseInt(mainList[randomIndex][i])){
                     let arrow = document.createElement("div");
-                    arrow.classList.add("ArrowDown");
+                    arrow.classList.add("ArrowUp");
                     element.appendChild(arrow);
                 }
                 else if(mainList[userIndex][i] == "A Lot" || parseInt(mainList[userIndex][i]) > parseInt(mainList[randomIndex][i])){
                     let arrow = document.createElement("div");
-                    arrow.classList.add("ArrowUp");
+                    arrow.classList.add("ArrowDown");
                     element.appendChild(arrow);
                 }
             }
@@ -129,7 +129,7 @@ const mainList = [
     [["Sinner"],["Overlord"],[110],["Red"],["Male"],["Hotel","Alastor"]],
     [["Sinner"],["Normal"],[90],["White"],["Male"],["Hotel","Vees"]],
     [["Hellborn","Pet"],["Demon"],["Unknown"],["Red"],["Male"],["Lucyfer","Hotel"]],
-    [["Sinner","Saint"],["Normal"],[150],["Red","Black"],["Male"],["Hotel","Vees"]],
+    [["Sinner","Saint"],["Normal"],[150],["Red","Black"],["Male"],["Hotel","Vees","Sir Pentious"]],
     [["Sinner"],["Overlord"],[100],["Blue"],["Male"],["Vees"]],
     [["Hellborn"],["Overlord"],["Unknown"],["Red","White"],["Female"],["Canibal"]],
     [["Sinner"],["Overlord"],[25],["Red","Black"],["Female"],["Vees"]],
@@ -142,7 +142,7 @@ const mainList = [
     [["Heavenborn"],["Seven Deadly Sins","Fallen Angel", "Morningstar"],["A Lot"],["Red","White"],["Male"],["Seven Deadly Sins","Lucyfer"]],
     [["Sinner"],["Normal"],[130],["Black","Blue"],["Male"],["Unknown"]],
     [["Sinner"],["Overlord"],["Unknown"],["White","Black"],["Female"],["Carmilla Carmine"]],
-    [["Artificial"],["Demon"],["Unknown"],["White","Yellow"],["Male"],["Sir Pentious","Hotel"]],
+    [["Artificial","Pet"],["Demon"],["Unknown"],["White","Yellow"],["Male"],["Hotel","Sir Pentious"]],
     [["Heavenborn"],["Seraph"],["Unknown"],["White","Blue"],["Female"],["Heaven"]],
     [["Hellborn","Pet"],["Demon"],["Unknown"],["Pink"],["Male"],["Hotel"]],
     [["Sinner"],["Normal"],[60],["Red"],["Female"],["TV"]],
