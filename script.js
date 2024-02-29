@@ -151,7 +151,7 @@ const mainList = [
     [["Sinner"],["Normal"],[130],["Red"],["Female"],["Alastor","Mammon"]],
     [["Saint"],["Normal"],[90],["White","Pink"],["Female"],["Heaven"]],
     [["Heavenborn"],["Seraph"],["Unknown"],["White","Gray"],["Female"],["Heaven"]],
-    [["Saint"],["Angel"],[1900],["White","Blue"],["Male"],["Heaven"]],
+    [["Saint"],["Angel"],[2100],["White","Blue"],["Male"],["Heaven"]],
     [["Sinner"],["Normal"],[140],["Gray"],["Male"],["TV"]],
     [["Sinner"],["Normal"],[140],["Black"],["Male"],["Vees"]],
     [["Heavenborn"],["Fallen Angel"],["Unknown"],["Red","Gray"],["Female"],["Hotel","Exorcist"]],
