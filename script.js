@@ -32,11 +32,13 @@ function compareArrays(mainList, userIndex, randomIndex) {
 //------------------------------------------------------------------------------\\
 
 function check(mainList,userIndex,randomIndex,output,name){
+    if(lastGuess == null) {
+        document.getElementById('ColorIndicator').style.visibility = 'visible';
+    }
     if (randomIndex === userIndex) {
         document.getElementById('Text').style.display = 'none';
     }
     const result = compareArrays(mainList, userIndex, randomIndex);
-    console.log(result); // Output: [0, 1]
     const wrapper = document.createElement("div");
     wrapper.classList.add("wrapper")
     output.insertBefore(wrapper,lastGuess)
@@ -52,6 +54,24 @@ function check(mainList,userIndex,randomIndex,output,name){
         const element = document.createElement("div");
         wrapper.appendChild(element);
         element.classList.add("Box" + result[i]);
+        if(i == 2 && mainList[userIndex][i] != mainList[randomIndex][i]){
+            if(mainList[userIndex][i] != "Unknown" &&  mainList[randomIndex][i] != "Unknown"){
+                console.log(mainList[randomIndex][i])
+                console.log(mainList[userIndex][i])
+                console.log(mainList[userIndex][i] > mainList[randomIndex][i])
+                console.log(mainList[userIndex][i] < mainList[randomIndex][i])
+                if(mainList[randomIndex][i] == "A Lot" || mainList[userIndex][i] < mainList[randomIndex][i]){
+                    let arrow = document.createElement("div");
+                    arrow.classList.add("ArrowDown");
+                    element.appendChild(arrow);
+                }
+                else if(mainList[userIndex][i] > mainList[randomIndex][i]){
+                    let arrow = document.createElement("div");
+                    arrow.classList.add("ArrowUp");
+                    element.appendChild(arrow);
+                }
+            }
+        }
         const para = document.createElement("p");
         let text = " "
         for (let j = 0; j < mainList[userIndex][i].length; j++) {
@@ -112,33 +132,33 @@ const usedIndexes = [];
 const mainList = [
     [["Sinner"], ["Overlord"],[110],["Red"],["Male"],["Hotel","Alastor"]],
     [["Sinner"],["Normal"],[90],["White"],["Male"],["Hotel","Vees"]],
-    [["Hellborn","Pet"], ["Demon"],["-"],["Red"],["Male"],["Lucyfer"]],
-    [["Sinner","Winner"],["Normal"],[150],["Red","Black"],["Male"],["Hotel","Vees"]],
+    [["Hellborn","Pet"], ["Demon"],["Unknown"],["Red"],["Male"],["Lucyfer","Hotel"]],
+    [["Sinner","Saint"],["Normal"],[150],["Red","Black"],["Male"],["Hotel","Vees"]],
     [["Sinner"],["Overlord"],[100],["Blue"],["Male"],["Vees"]],
-    [["Hellborn"],["Overlord"],["-"],["Red","White"],["Female"],["Canibal"]],
+    [["Hellborn"],["Overlord"],["Unknown"],["Red","White"],["Female"],["Canibal"]],
     [["Sinner"],["Overlord"],[25],["Red","Black"],["Female"],["Vees"]],
     [["Sinner"],["Overlord"],[80],["Red","White"],["Male"],["Vees"]],
     [["Sinner"],["Normal"],[80],["Red","White"],["Female"],["Hotel"]],
     [["Sinner"],["Overlord"],[80],["Red","Black"],["Male"],["Hotel","Alastor"]],
-    [["Winner"],["Angel"],[60000],["White","Yellow"],["Male"],["Heaven","Adam"]],
-    [["Heavenborn"],["Angel","Exorcist"],["-"],["White","Black"],["Female"],["Heaven","Adam"]],
+    [["Saint"],["Angel"],["A Lot"],["White","Yellow"],["Male"],["Heaven","Adam"]],
+    [["Heavenborn"],["Angel","Exorcist"],["Unknown"],["White","Black"],["Female"],["Heaven","Adam"]],
     [["Sinner"],["Unknown"],[100],["Red","White"],["Female"],["Hotel","Alastor"]],
-    [["Heavenborn"],["Seven Deadly Sins","Fallen Angel", "Morningstar"],["Inf"],["Red","White"],["Male"],["Seven Deadly Sins","Lucyfer"]],
+    [["Heavenborn"],["Seven Deadly Sins","Fallen Angel", "Morningstar"],["A Lot"],["Red","White"],["Male"],["Seven Deadly Sins","Lucyfer"]],
     [["Sinner"],["Normal"],[130],["Black","Blue"],["Male"],["Unknown"]],
-    [["Sinner"],["Overlord"],["-"],["White","Black"],["Female"],["Carmilla Carmine"]],
-    [["Artificial"],["Demon"],["-"],["White","Yellow"],["Male"],["Sir Pentious","Hotel"]],
-    [["Heavenborn"],["Seraph"],["-"],["White","Blue"],["Female"],["Heaven"]],
-    [["Hellborn","Pet"],["Demon"],["-"],["Pink"],["Male"],["Hotel"]],
+    [["Sinner"],["Overlord"],["Unknown"],["White","Black"],["Female"],["Carmilla Carmine"]],
+    [["Artificial"],["Demon"],["Unknown"],["White","Yellow"],["Male"],["Sir Pentious","Hotel"]],
+    [["Heavenborn"],["Seraph"],["Unknown"],["White","Blue"],["Female"],["Heaven"]],
+    [["Hellborn","Pet"],["Demon"],["Unknown"],["Pink"],["Male"],["Hotel"]],
     [["Sinner"],["Normal"],[60],["Red"],["Female"],["TV"]],
-    [["Hellborn","Pet"],["Demon"],["-"],["Black"],["Female"],["Hotel","Lucyfer"]],
-    [["Sinner"],["Morningstar"],[60000],["Black"],["Female"],["Lucyfer","Exorcist"]],
+    [["Hellborn","Pet"],["Demon"],["Unknown"],["Black"],["Female"],["Hotel","Lucyfer"]],
+    [["Sinner"],["Morningstar"],["A Lot"],["Black"],["Female"],["Lucyfer","Exorcist"]],
     [["Sinner"],["Normal"],[130],["Red"],["Female"],["Alastor","Mammon"]],
-    [["Winner"],["Normal"],[90],["White","Pink"],["Female"],["Heaven"]],
-    [["Heavenborn"],["Seraph"],["-"],["White","Gray"],["Female"],["Heaven"]],
-    [["Winner"],["Angel"],[1900],["White","Blue"],["Male"],["Heaven"]],
+    [["Saint"],["Normal"],[90],["White","Pink"],["Female"],["Heaven"]],
+    [["Heavenborn"],["Seraph"],["Unknown"],["White","Gray"],["Female"],["Heaven"]],
+    [["Saint"],["Angel"],[1900],["White","Blue"],["Male"],["Heaven"]],
     [["Sinner"],["Normal"],[140],["Gray"],["Male"],["TV"]],
     [["Sinner"],["Normal"],[140],["Black"],["Male"],["Vees"]],
-    [["Heavenborn"],["Fallen Angel"],["-"],["Red","Gray"],["Female"],["Hotel","Exorcist"]],
+    [["Heavenborn"],["Fallen Angel"],["Unknown"],["Red","Gray"],["Female"],["Hotel","Exorcist"]],
     [["Sinner"],["Overlord"],[500],["Black","Green"],["Male"],["Zestial"]],
     [["Hellborn"],["Morningstar"],[200],["Red","Black"],["Female"],["Hotel"]],
 ];

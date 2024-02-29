@@ -7,17 +7,18 @@ body {
     background-repeat: repeat;
     background-attachment: fixed;
 }
-body:after {
+body::after {
     content: '';
     width: 100%;
     height: 100%;
     background-image: radial-gradient(circle at center, rgba(0, 0, 0,0) 0, rgba(0, 0, 0,30) 150%);
     background-attachment: fixed;
-    position: absolute;
+    position: fixed;
     z-index: -1;
     top:0;
 }
 p {
+    z-index: 3;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -56,6 +57,7 @@ p {
 }
 
 .Box2 {
+    position: relative;
     font-size: 15px;
     border: 1px solid white;
     display: grid;
@@ -63,6 +65,35 @@ p {
     width: 70px;
     height: 70px;
     background-image: radial-gradient(circle at center, rgb(209, 31, 31) 0, rgb(194, 43, 43) 110%);
+}
+
+.ArrowDown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    clip-path: polygon(97% 60%,80% 60%,80% 5%,20% 5%,20% 60%,3% 60%,50% 95%);
+    -webkit-clip-path: polygon(97% 60%,80% 60%,80% 5%,20% 5%,20% 60%,3% 60%,50% 95%);
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    content: "";
+    opacity: 1;
+}
+.ArrowUp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    clip-path: polygon(97% 40%,80% 40%,80% 95%,20% 95%,20% 40%,3% 40%,50% 5%);
+    -webkit-clip-path: polygon(97% 40%,80% 40%,80% 95%,20% 95%,20% 40%,3% 40%,50% 5%);
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    content: "";
+    opacity: 1;
 }
 #Categories {
     width: fit-content;
@@ -92,21 +123,23 @@ p {
     margin-bottom: 100px;
 }
 #Main {
-    position: fixed;
+    position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     /*background-image: radial-gradient(circle at center, rgb(255, 0, 85) 0, rgb(189, 28, 82) 110%);
     border: 2px solid rgb(104, 10, 41);*/
     width: fit-content;
-    padding: 10px 20px;
-    margin: auto;
+    padding: 0 0;
+    margin: 0px auto;
 }
-#Main:after {
+#Main::after {
     content: '';
     width: 103%;
-    height: 300%;
-    background-image: linear-gradient(180deg , rgba(0,0,0,0),rgba(0,0,0,0.8));
+    height: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(180deg , rgba(0,0,0,0),rgba(0,0,0,0.4));
     position: absolute;
     top:0;
     left: -10px;
@@ -118,8 +151,8 @@ p {
 #Center {
     position: relative;
     z-index: 1;
-    margin: 100px;
-    width: fit-content;
+    margin-top: 100px;
+    width: 560px;
     margin: auto;
     align-items: center;
 }
@@ -129,7 +162,6 @@ p {
     height: 70px;
     width: fit-content;
     margin: auto;
-    
 }
 #name {
     font-size: 20px;
@@ -148,4 +180,13 @@ p {
     width: 80px;
     background-color: rgb(71, 54, 52);
     border: 2px solid black;
+}
+#ColorIndicator {
+    background-color: rgba(255, 0, 85,0.3);
+    border: 4px solid white;
+    border-radius: 5px;
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
 }
