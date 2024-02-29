@@ -138,7 +138,7 @@ const mainList = [
     [["Sinner"],["Overlord"],[80],["Red","Black"],["Male"],["Hotel","Alastor"]],
     [["Saint"],["Angel"],["A Lot"],["White","Yellow"],["Male"],["Heaven","Adam"]],
     [["Heavenborn"],["Angel","Exorcist"],["Unknown"],["White","Black"],["Female"],["Heaven","Adam"]],
-    [["Sinner"],["Unknown"],[100],["Red","White"],["Female"],["Hotel","Alastor"]],
+    [["Sinner"],["Normal"],[100],["Red","White"],["Female"],["Hotel","Alastor"]],
     [["Heavenborn"],["Seven Deadly Sins","Fallen Angel", "Morningstar"],["A Lot"],["Red","White"],["Male"],["Seven Deadly Sins","Lucyfer"]],
     [["Sinner"],["Normal"],[130],["Black","Blue"],["Male"],["Unknown"]],
     [["Sinner"],["Overlord"],["Unknown"],["White","Black"],["Female"],["Carmilla Carmine"]],
