@@ -56,16 +56,12 @@ function check(mainList,userIndex,randomIndex,output,name){
         element.classList.add("Box" + result[i]);
         if(i == 2 && mainList[userIndex][i] != mainList[randomIndex][i]){
             if(mainList[userIndex][i] != "Unknown" &&  mainList[randomIndex][i] != "Unknown"){
-                console.log(mainList[randomIndex][i])
-                console.log(mainList[userIndex][i])
-                console.log(mainList[userIndex][i] > mainList[randomIndex][i])
-                console.log(mainList[userIndex][i] < mainList[randomIndex][i])
-                if(mainList[randomIndex][i] == "A Lot" || mainList[userIndex][i] < mainList[randomIndex][i]){
+                if(mainList[randomIndex][i] == "A Lot" || parseInt(mainList[userIndex][i]) < parseInt(mainList[randomIndex][i])){
                     let arrow = document.createElement("div");
                     arrow.classList.add("ArrowDown");
                     element.appendChild(arrow);
                 }
-                else if(mainList[userIndex][i] > mainList[randomIndex][i]){
+                else if(mainList[userIndex][i] == "A Lot" || parseInt(mainList[userIndex][i]) > parseInt(mainList[randomIndex][i])){
                     let arrow = document.createElement("div");
                     arrow.classList.add("ArrowUp");
                     element.appendChild(arrow);
@@ -130,9 +126,9 @@ function search() {
 const names = ["Alastor","Angel Dust","Razzle & Dazzle","Sir Pentious","Vox","Rosie","Velvette","Valentino","Cherri Bomb","Husk","Adam","Lute","Niffty","Lucyfer", "Baxter", "Carmilla Carmine", "Egg Boiz", "Emily", "Fat Nuggets", "Katie Killjoy", "KeeKee", "Lilith", "Mimzy", "Molly", "Sera", "St. Peter", "Tom Trench", "Travis","Vaggie", "Zestial","Charlie"]
 const usedIndexes = [];
 const mainList = [
-    [["Sinner"], ["Overlord"],[110],["Red"],["Male"],["Hotel","Alastor"]],
+    [["Sinner"],["Overlord"],[110],["Red"],["Male"],["Hotel","Alastor"]],
     [["Sinner"],["Normal"],[90],["White"],["Male"],["Hotel","Vees"]],
-    [["Hellborn","Pet"], ["Demon"],["Unknown"],["Red"],["Male"],["Lucyfer","Hotel"]],
+    [["Hellborn","Pet"],["Demon"],["Unknown"],["Red"],["Male"],["Lucyfer","Hotel"]],
     [["Sinner","Saint"],["Normal"],[150],["Red","Black"],["Male"],["Hotel","Vees"]],
     [["Sinner"],["Overlord"],[100],["Blue"],["Male"],["Vees"]],
     [["Hellborn"],["Overlord"],["Unknown"],["Red","White"],["Female"],["Canibal"]],
