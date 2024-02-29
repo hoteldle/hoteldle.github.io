@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hoteldle</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="Main">
+            <img id="logo" src="Logo.png">
+            <div id="Center">
+                <div id="Text">
+                    <input type="text" id="name" list="names" placeholder="Type character name ..."><button type="button" id="Button">Guess</button>
+                    <datalist id="names">
+                        <option value="Alastor"></option>
+                        <option value="Angel Dust"></option>
+                        <option value="Razzle & Dazzle"></option>
+                        <option value="Sir Pentious"></option>
+                        <option value="Vox"></option>
+                        <option value="Rosie"></option>
+                        <option value="Velvette"></option>
+                        <option value="Valentino"></option>
+                        <option value="Cherri Bomb"></option>
+                        <option value="Husk"></option>
+                        <option value="Adam"></option>
+                        <option value="Lute"></option>
+                        <option value="Niffty"></option>
+                        <option value="Lucyfer"></option>
+                        <option value="Carmilla Carmine"></option>
+                        <option value="Egg Boiz"></option>
+                        <option value="Fat Nuggets"></option>
+                        <option value="Katie Killjoy"></option>
+                        <option value="KeeKee"></option>
+                        <option value="Lilith"></option>
+                        <option value="Mimzy"></option>
+                        <option value="Molly"></option>
+                        <option value="Sera"></option>
+                        <option value="St. Peter"></option>
+                        <option value="Tom Trench"></option>
+                        <option value="Travis"></option>
+                        <option value="Vaggie"></option>
+                        <option value="Zestial"></option>
+			<option value="Charlie"></option>
+			<option value="Baxter"></option>
+			<option value="Emily"></option>
+                    </datalist>
+                </div>
+                <div id="Categories">
+                    <div class="Category"><p>Name</p></div>
+                    <div class="Category"><p>Race</p></div>
+                    <div class="Category"><p>Class</p></div>
+                    <div class="Category"><p>Age</p></div>
+                    <div class="Category"><p>Color</p></div>
+                    <div class="Category"><p>Gender</p></div>
+                    <div class="Category"><p>Association</p></div>
+                </div>
+                <div id="Output">
+
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script>
+            // Keep track of the original options
+            const originalOptions = Array.from(document.getElementById('names').options);
+            const datalist = document.getElementById('names');
+    
+            document.getElementById('name').addEventListener('input', function(event) {
+                const input = event.target.value.trim().toLowerCase(); // Trim whitespace and convert to lowercase
+    
+                if (input === '') {
+
+                } else {
+                    const filteredOptions = originalOptions.filter(option => option.value.toLowerCase().startsWith(input));
+                    updateOptions(filteredOptions);
+                }
+            });
+    
+            // Function to update options based on filtered options
+            function updateOptions(filteredOptions) {
+                datalist.innerHTML = '';
+                filteredOptions.forEach(option => {
+                    datalist.appendChild(option.cloneNode(true));
+                });
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,151 @@
+body {
+    margin: 0; 
+    padding: 0;
+    background-image: url("Untitled.png");
+    background-size: 200px;
+    background-color: #390202;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+body:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at center, rgba(0, 0, 0,0) 0, rgba(0, 0, 0,30) 150%);
+    background-attachment: fixed;
+    position: absolute;
+    z-index: -1;
+    top:0;
+}
+p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color:white;
+    text-shadow: 0px 0px 5px black;
+
+}
+.Box {
+    font-size: 15px;
+    border: 1px solid white;
+    display: grid;
+	align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(34, 34, 34);
+}
+
+.Box0 {
+    font-size: 15px;
+    border: 1px solid white;
+    display: grid;
+	align-items: center;
+    width: 70px;
+    height: 70px;
+    background-image: radial-gradient(circle at center, rgb(20, 202, 20) 0, rgb(34, 165, 34) 110%);
+}
+
+.Box1 {
+    font-size: 15px;
+    border: 1px solid white;
+    display: grid;
+	align-items: center;
+    width: 70px;
+    height: 70px;
+    background-image: radial-gradient(circle at center, rgb(238, 157, 43) 0, rgb(230, 154, 67) 110%);
+}
+
+.Box2 {
+    font-size: 15px;
+    border: 1px solid white;
+    display: grid;
+	align-items: center;
+    width: 70px;
+    height: 70px;
+    background-image: radial-gradient(circle at center, rgb(209, 31, 31) 0, rgb(194, 43, 43) 110%);
+}
+#Categories {
+    width: fit-content;
+    display: flex;
+    column-gap: 10px;
+    height: fit-content;
+    margin: 30px 0px 10px;
+}
+.Category {
+    border-bottom: 2px solid white;
+    text-align: center;
+    width: 72px;
+    font-size: 12px;
+}
+.wrapper {
+    display: flex;
+    column-gap: 10px;
+    height: 80px;
+    width:  fit-content;
+}
+#logo {
+    margin-top: 10px;
+    z-index: -1;
+    left: 50%;
+    transform: translate(50%, 0);
+    width:50%;height:auto;
+    margin-bottom: 100px;
+}
+#Main {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 100vh;
+    /*background-image: radial-gradient(circle at center, rgb(255, 0, 85) 0, rgb(189, 28, 82) 110%);
+    border: 2px solid rgb(104, 10, 41);*/
+    width: fit-content;
+    padding: 10px 20px;
+    margin: auto;
+}
+#Main:after {
+    content: '';
+    width: 103%;
+    height: 300%;
+    background-image: linear-gradient(180deg , rgba(0,0,0,0),rgba(0,0,0,0.8));
+    position: absolute;
+    top:0;
+    left: -10px;
+    filter:blur(10px)
+}
+#Output {
+    width: 560px;
+}
+#Center {
+    position: relative;
+    z-index: 1;
+    margin: 100px;
+    width: fit-content;
+    margin: auto;
+    align-items: center;
+}
+#Text {
+    border: 3px solid black;
+    margin-bottom: 20px;
+    height: 70px;
+    width: fit-content;
+    margin: auto;
+    
+}
+#name {
+    font-size: 20px;
+    background-color: white;
+    border: none;
+    color: rgb(89, 89, 89);
+    height: 92%;
+    width: 250px;
+    border: 2px solid black;
+}
+#Button {
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    height: 100%;
+    width: 80px;
+    background-color: rgb(71, 54, 52);
+    border: 2px solid black;
+}
