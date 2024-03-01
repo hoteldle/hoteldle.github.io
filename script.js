@@ -125,6 +125,7 @@ function search() {
 
 const names = ["Alastor","Angel Dust","Razzle & Dazzle","Sir Pentious","Vox","Rosie","Velvette","Valentino","Cherri Bomb","Husk","Adam","Lute","Niffty","Lucyfer", "Baxter", "Carmilla Carmine", "Egg Boiz", "Emily", "Fat Nuggets", "Katie Killjoy", "KeeKee", "Lilith", "Mimzy", "Molly", "Sera", "St. Peter", "Tom Trench", "Travis","Vaggie", "Zestial","Charlie"]
 const usedIndexes = [];
+/*
 const mainList = [
     [["Sinner"],["Overlord"],[110],["Red"],["Male"],["Hotel","Alastor"]],
     [["Sinner"],["Normal"],[90],["White"],["Male"],["Hotel","Vees"]],
@@ -158,6 +159,42 @@ const mainList = [
     [["Sinner"],["Overlord"],[500],["Black","Green"],["Male"],["Zestial"]],
     [["Hellborn"],["Morningstar"],[200],["Red","Black"],["Female"],["Hotel"]],
 ];
+*/
+
+const mainList = [
+    [["Earth"],["Sinner","Overlord"],[110],["Red"],["Male"],["Hotel","Alastor"]],
+    [["Earth"],["Sinner"],[90],["White"],["Male"],["Hotel","Vees"]],
+    [["Hell"],["Pet"],["Unknown"],["Red"],["Male"],["Lucyfer","Hotel"]],
+    [["Earth"],["Sinner","Saint"],[150],["Red","Black"],["Male"],["Hotel","Vees","Sir Pentious"]],
+    [["Earth"],["Sinner","Overlord"],[100],["Blue"],["Male"],["Vees"]],
+    [["Hell"],["Overlord"],["Unknown"],["Red","White"],["Female"],["Canibal"]],
+    [["Earth"],["Sinner","Overlord"],[25],["Red","Black"],["Female"],["Vees"]],
+    [["Earth"],["Sinner","Overlord"],[80],["Red","White"],["Male"],["Vees"]],
+    [["Earth"],["Sinner"],[80],["Red","White"],["Female"],["Hotel"]],
+    [["Earth"],["Sinner"],[80],["Red","Black"],["Male"],["Hotel","Alastor"]],
+    [["Earth"],["Angel"],["A Lot"],["White","Yellow"],["Male"],["Heaven","Adam"]],
+    [["Heaven"],["Angel","Exorcist"],["Unknown"],["White","Black"],["Female"],["Heaven","Adam"]],
+    [["Earth"],["Sinner"],[100],["Red","White"],["Female"],["Hotel","Alastor"]],
+    [["Heaven"],["Seven Deadly Sins","Fallen Angel", "Morningstar"],["A Lot"],["Red","White"],["Male"],["Seven Deadly Sins","Lucyfer"]],
+    [["Earth"],["Sinner"],[130],["Black","Blue"],["Male"],["Unknown"]],
+    [["Earth"],["Sinner","Overlord"],["Unknown"],["White","Black"],["Female"],["Carmilla Carmine"]],
+    [["Artificial"],["Pet"],["Unknown"],["White","Yellow"],["Male"],["Hotel","Sir Pentious"]],
+    [["Heaven"],["Seraph"],["Unknown"],["White","Blue"],["Female"],["Heaven"]],
+    [["Hell"],["Pet"],["Unknown"],["Pink"],["Male"],["Hotel"]],
+    [["Earth"],["Sinner"],[60],["Red"],["Female"],["TV"]],
+    [["Hell"],["Pet"],["Unknown"],["Black"],["Female"],["Hotel","Lucyfer"]],
+    [["Earth"],["Sinner","Morningstar"],["A Lot"],["Black"],["Female"],["Lucyfer","Exorcist"]],
+    [["Earth"],["Sinner"],[130],["Red"],["Female"],["Alastor","Mammon"]],
+    [["Earth"],["Sinner"],[90],["White","Pink"],["Female"],["Heaven"]],
+    [["Heaven"],["Seraph"],["Unknown"],["White","Gray"],["Female"],["Heaven"]],
+    [["Earth"],["Angel"],[2050],["White","Blue"],["Male"],["Heaven"]],
+    [["Earth"],["Sinner"],[140],["Gray"],["Male"],["TV"]],
+    [["Earth"],["Sinner"],[140],["Black"],["Male"],["Vees"]],
+    [["Heaven"],["Fallen Angel"],["Unknown"],["Red","Gray"],["Female"],["Hotel","Exorcist"]],
+    [["Earth"],["Sinner","Overlord"],[500],["Black","Green"],["Male"],["Zestial"]],
+    [["Hell"],["Morningstar"],[200],["Red","Black"],["Female"],["Hotel"]],
+];
+
 let lastGuess = null;
 let output = document.getElementById('Output');
 const randomIndex = Math.floor(Math.random() * mainList.length);
