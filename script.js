@@ -135,7 +135,7 @@ const mainList = [
     [["Sinner"],["Overlord"],[25],["Red","Black"],["Female"],["Vees"]],
     [["Sinner"],["Overlord"],[80],["Red","White"],["Male"],["Vees"]],
     [["Sinner"],["Normal"],[80],["Red","White"],["Female"],["Hotel"]],
-    [["Sinner"],["Overlord"],[80],["Red","Black"],["Male"],["Hotel","Alastor"]],
+    [["Sinner"],["Normal"],[80],["Red","Black"],["Male"],["Hotel","Alastor"]],
     [["Saint"],["Angel"],["A Lot"],["White","Yellow"],["Male"],["Heaven","Adam"]],
     [["Heavenborn"],["Angel","Exorcist"],["Unknown"],["White","Black"],["Female"],["Heaven","Adam"]],
     [["Sinner"],["Normal"],[100],["Red","White"],["Female"],["Hotel","Alastor"]],
