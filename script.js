@@ -54,7 +54,7 @@ function check(mainList,userIndex,randomIndex,output,name){
         const element = document.createElement("div");
         wrapper.appendChild(element);
         element.classList.add("Box" + result[i]);
-        if(i == 2 && mainList[userIndex][i] != mainList[randomIndex][i]){
+        if(i == 2 && JSON.stringify(mainList[userIndex][i]) != JSON.stringify(mainList[randomIndex][i])){
             if(mainList[userIndex][i] != "Unknown" &&  mainList[randomIndex][i] != "Unknown"){
                 if(mainList[randomIndex][i] == "A Lot" || parseInt(mainList[userIndex][i]) < parseInt(mainList[randomIndex][i])){
                     let arrow = document.createElement("div");
