@@ -185,7 +185,7 @@ const mainList = [
     [["Hell"],["Pet"],["Unknown"],["Black"],["Female"],["Hotel","Lucyfer"]],
     [["Earth"],["Sinner","Morningstar"],["A Lot"],["Black"],["Female"],["Lucyfer","Exorcist"]],
     [["Earth"],["Sinner"],[130],["Red"],["Female"],["Alastor","Mammon"]],
-    [["Earth"],["Sinner"],[90],["White","Pink"],["Female"],["Heaven"]],
+    [["Earth"],["Saint"],[90],["White","Pink"],["Female"],["Heaven"]],
     [["Heaven"],["Seraph"],["Unknown"],["White","Gray"],["Female"],["Heaven"]],
     [["Earth"],["Angel"],[2050],["White","Blue"],["Male"],["Heaven"]],
     [["Earth"],["Sinner"],[140],["Gray"],["Male"],["TV"]],
