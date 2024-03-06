@@ -9,44 +9,8 @@
         <div id="Main">
             <img id="logo" src="Logo.png">
             <div id="Center">
-                <div id="Text">
-                    <div class="autocomplete" style="width: 250px; height: 100%;">
-                        <input type="text" id="name" placeholder="Type character name ...">
-                    </div>
-                    <button type="button" id="Button">Guess</button>
-                    <datalist id="names">
-                        <option value="Alastor"></option>
-                        <option value="Angel Dust"></option>
-                        <option value="Razzle & Dazzle"></option>
-                        <option value="Sir Pentious"></option>
-                        <option value="Vox"></option>
-                        <option value="Rosie"></option>
-                        <option value="Velvette"></option>
-                        <option value="Valentino"></option>
-                        <option value="Cherri Bomb"></option>
-                        <option value="Husk"></option>
-                        <option value="Adam"></option>
-                        <option value="Lute"></option>
-                        <option value="Niffty"></option>
-                        <option value="Lucyfer"></option>
-                        <option value="Carmilla Carmine"></option>
-                        <option value="Egg Boiz"></option>
-                        <option value="Fat Nuggets"></option>
-                        <option value="Katie Killjoy"></option>
-                        <option value="KeeKee"></option>
-                        <option value="Lilith"></option>
-                        <option value="Mimzy"></option>
-                        <option value="Molly"></option>
-                        <option value="Sera"></option>
-                        <option value="St. Peter"></option>
-                        <option value="Tom Trench"></option>
-                        <option value="Travis"></option>
-                        <option value="Vaggie"></option>
-                        <option value="Zestial"></option>
-                        <option value="Charlie"></option>
-                        <option value="Baxter"></option>
-                        <option value="Emily"></option>
-                    </datalist>
+                <div class="autocomplete">
+                    <input type="text" id="name" placeholder="Type character name ..."><button type="button" id="Button">Guess</button>
                 </div>
                 <div id="Categories">
                     <div class="Category"><p>Name</p></div>
@@ -69,31 +33,7 @@
                 </div>
             </div>
         </div>
-        <p style="position: absolute; left: 0; bottom: 0; font-size: 10px;">Made by Mentel</p>
+        <p style="position: fixed; left: 0; bottom: 0; font-size: 10px;">Made by Mentel</p>
         <script src="script.js"></script>
-        <script>
-            // Keep track of the original options
-            const originalOptions = Array.from(document.getElementById('names').options);
-            const datalist = document.getElementById('names');
-    
-            document.getElementById('name').addEventListener('input', function(event) {
-                const input = event.target.value.trim().toLowerCase(); // Trim whitespace and convert to lowercase
-    
-                if (input === '') {
-
-                } else {
-                    const filteredOptions = originalOptions.filter(option => option.value.toLowerCase().startsWith(input));
-                    updateOptions(filteredOptions);
-                }
-            });
-    
-            // Function to update options based on filtered options
-            function updateOptions(filteredOptions) {
-                datalist.innerHTML = '';
-                filteredOptions.forEach(option => {
-                    datalist.appendChild(option.cloneNode(true));
-                });
-            }
-        </script>
     </body>
 </html>
