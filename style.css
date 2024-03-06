@@ -191,7 +191,7 @@ p {
     margin: auto;
     margin-top: 50px;
 }
-.autocomplete {
+#autocomplete {
     position:relative;
     z-index: 8;
     /*the container must be positioned relative:*/
