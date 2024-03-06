@@ -1,0 +1,33 @@
+//*Color Chierarchy
+    Red
+    White
+    Black
+    Pink
+    Purple
+    Blue
+    Light Blue
+    Green
+    Yellow
+    Brown
+    Orange
+*/
+
+//*Association Chierarchy
+    !Alphabethical!
+
+    Adam
+    Alastor
+    Cannibal
+    Carmilla Carmine
+    Exorcist
+    Heaven
+    Hotel
+    Lucyfer
+    Mammon
+    Morningstar
+    Seven Deadly Sins
+    Sir Pentious
+    Vees
+    Zestial
+    Unknown
+*/
