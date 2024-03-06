@@ -36,7 +36,7 @@ function check(mainList,userIndex,randomIndex,output,name){
         document.getElementById('ColorIndicator').style.visibility = 'visible';
     }
     if (randomIndex === userIndex) {
-        document.getElementsByClassName('autocomplete').style.display = 'none';
+        document.getElementById('autocomplete').style.display = 'none';
     }
     const result = compareArrays(mainList, userIndex, randomIndex);
     const wrapper = document.createElement("div");
