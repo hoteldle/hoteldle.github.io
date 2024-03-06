@@ -298,4 +298,5 @@ let lastGuess = null;
 let output = document.getElementById('Output');
 const randomIndex = Math.floor(Math.random() * mainList.length);
 document.getElementById("Button").addEventListener("click", search);
+document.getElementById("name").addEventListener("keydown", function(e) {search()});
 
