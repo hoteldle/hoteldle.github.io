@@ -32,6 +32,7 @@ function compareArrays(mainList, userIndex, randomIndex) {
 //------------------------------------------------------------------------------\\
 
 function check(mainList,userIndex,randomIndex,output,name){
+    document.getElementById('name').value = ""
     if(lastGuess == null) {
         document.getElementById('ColorIndicator').style.visibility = 'visible';
     }
