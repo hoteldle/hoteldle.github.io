@@ -15,10 +15,15 @@ function connectArrays() {
         names = hbn.concat(bothn);
     }
     autocomplete(document.getElementById("name"), names);
+    reset();
+    if(mainList.length != names.length){console.log("You Dumbass You Can't Count");}
+}
+function reset() {
     randomIndex = Math.floor(Math.random() * mainList.length);
     lastGuess = null;
     usedIndexes = [];
-    if(mainList.length != names.length){console.log("You Dumbass You Can't Count");}
+    document.getElementById('autocomplete').style.display = 'inline-block';
+    output.textContent = '';
 }
 
 function compareArrays(mainList, userIndex, randomIndex) {
@@ -318,9 +323,8 @@ let names = [];
 let mainList = [];
 let lastGuess = null;
 let usedIndexes = [];
-connectArrays()
 let output = document.getElementById('Output');
-autocomplete(document.getElementById("name"), names);
+connectArrays()
 document.getElementById("Button").addEventListener("click", search);
 document.getElementById("name").addEventListener("keydown", function(e) {search()});
 
