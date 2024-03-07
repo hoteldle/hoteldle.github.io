@@ -326,8 +326,8 @@ let usedIndexes = [];
 let output = document.getElementById('Output');
 connectArrays()
 document.getElementById("Button").addEventListener("click", search);
-document.getElementById("name").addEventListener("keyup", (event) => {
-  if (event.key === "Enter") {
+document.getElementById("name").addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
     search();
   }
 });
