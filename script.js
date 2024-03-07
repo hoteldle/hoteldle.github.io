@@ -15,6 +15,7 @@ function connectArrays() {
         names = hbn.concat(bothn);
     }
     autocomplete(document.getElementById("name"), names);
+    const randomIndex = Math.floor(Math.random() * mainList.length);
 }
 
 function compareArrays(mainList, userIndex, randomIndex) {
