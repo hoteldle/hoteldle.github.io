@@ -55,7 +55,7 @@
 [["Demon"],["Hellhound"],[22],["White","Black"],["Female"],["I.M.P."]], //Loona
 [["Sinner"],["Artificial"],[40],["Red","Black","Green"],["Male"],["Wally Wackford"]], //Loopty Goopty
 [["Sinner"],["Artificial"],[40],["Black","Green"],["Male"],["Wally Wackford"]], //Lyle Lipton
-[["Seven Deadly Sins"],["Clown"],["Old As Hell"],["Black Green"],["Male"],["Mammon", "Greed", "Fizzarolli"]], //Mammon
+[["Seven Deadly Sins"],["Clown"],["Old As Hell"],["Black","Green"],["Male"],["Mammon", "Greed", "Fizzarolli"]], //Mammon
 [["Human"],["Human"],["-"],["White","Blue","Pink"],["Female"],["Satan","Cannibal"]], //Martha
 [["Demon"],["Imp"],[27],["Red","Black"],["Female"],["I.M.P.","Wrath"]], //Millie
 [["Demon"],["Imp"],["-"],["Red","Black"],["Male"],["I.M.P.","Greed", "Wrath"]], //Moxxie
