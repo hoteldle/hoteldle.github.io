@@ -268,6 +268,8 @@ const hh = [
 ];
 let names = [];
 let mainList = [];
+let lastGuess = null;
+let usedIndexes = [];
 connectArrays()
 let output = document.getElementById('Output');
 autocomplete(document.getElementById("name"), names);
