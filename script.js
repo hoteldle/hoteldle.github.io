@@ -266,6 +266,7 @@ const hh = [
     [["Earth"],["Sinner","Overlord"],[500],["Black","Green"],["Male"],["Zestial"]],
     [["Hell"],["Morningstar"],[200],["Red","Black"],["Female"],["Hotel"]],
 ];
+let randomIndex = null;
 let names = [];
 let mainList = [];
 let lastGuess = null;
