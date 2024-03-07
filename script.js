@@ -267,6 +267,7 @@ const hh = [
     [["Hell"],["Morningstar"],[200],["Red","Black"],["Female"],["Hotel"]],
 ];
 let randomIndex = null;
+let userIndex = null;
 let names = [];
 let mainList = [];
 let lastGuess = null;
