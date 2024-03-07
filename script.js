@@ -2,21 +2,17 @@ function connectArrays() {
     var id = document.getElementById("Dropdown").value;
     mainList = [];
     names = [];
-    console.log(id)
     if(id == 0) {
-        mainList = hh.concat(hb);
-        names = hhn.concat(hbn);
-        console.log(names);
+        mainList = hh.concat(hb,both);
+        names = hhn.concat(hbn,bothn);
     }
     else if(id == 1){
-        mainList = hh;
-        names = hhn;
-        console.log(names)
+        mainList = hh.concat(both);
+        names = hhn.concat(bothn);
     }
     else if(id == 2){
-        mainList = hb;
-        names = hbn;
-        console.log(names)
+        mainList = hb.concat(both);
+        names = hbn.concat(bothn);
     }
     autocomplete(document.getElementById("name"), names);
 }
