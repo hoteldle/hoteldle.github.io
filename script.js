@@ -326,5 +326,6 @@ let usedIndexes = [];
 let output = document.getElementById('Output');
 connectArrays()
 document.getElementById("Button").addEventListener("click", search);
-document.getElementById("name").addEventListener("keydown", function(e) {search()});
+document.getElementById("name").addEventListener("keyup", (event) => {
+  if (event.keyCode === 13) { function(e) {search()}}});
 
