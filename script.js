@@ -220,41 +220,6 @@ function autocomplete(inp, arr) {
 
 //------------------------------------------------------------------------------\\
 
-/*
-const mainList = [
-    [["Sinner"],["Overlord"],[110],["Red"],["Male"],["Hotel","Alastor"]],
-    [["Sinner"],["Normal"],[90],["White"],["Male"],["Hotel","Vees"]],
-    [["Hellborn"],["Pet"],["Unknown"],["Red"],["Male"],["Lucyfer","Hotel"]],
-    [["Sinner","Saint"],["Normal"],[150],["Red","Black"],["Male"],["Hotel","Vees","Sir Pentious"]],
-    [["Sinner"],["Overlord"],[100],["Blue"],["Male"],["Vees"]],
-    [["Hellborn"],["Overlord"],["Unknown"],["Red","White"],["Female"],["Canibal"]],
-    [["Sinner"],["Overlord"],[25],["Red","Black"],["Female"],["Vees"]],
-    [["Sinner"],["Overlord"],[80],["Red","White"],["Male"],["Vees"]],
-    [["Sinner"],["Normal"],[80],["Red","White"],["Female"],["Hotel"]],
-    [["Sinner"],["Normal"],[80],["Red","Black"],["Male"],["Hotel","Alastor"]],
-    [["Saint"],["Angel"],["A Lot"],["White","Yellow"],["Male"],["Heaven","Adam"]],
-    [["Heavenborn"],["Angel","Exorcist"],["Unknown"],["White","Black"],["Female"],["Heaven","Adam"]],
-    [["Sinner"],["Normal"],[100],["Red","White"],["Female"],["Hotel","Alastor"]],
-    [["Heavenborn"],["Seven Deadly Sins","Fallen Angel", "Morningstar"],["A Lot"],["Red","White"],["Male"],["Seven Deadly Sins","Lucyfer"]],
-    [["Sinner"],["Normal"],[130],["Black","Blue"],["Male"],["Unknown"]],
-    [["Sinner"],["Overlord"],["Unknown"],["White","Black"],["Female"],["Carmilla Carmine"]],
-    [["Artificial"],["Pet"],["Unknown"],["White","Yellow"],["Male"],["Hotel","Sir Pentious"]],
-    [["Heavenborn"],["Seraph"],["Unknown"],["White","Blue"],["Female"],["Heaven"]],
-    [["Hellborn"],["Pet"],["Unknown"],["Pink"],["Male"],["Hotel"]],
-    [["Sinner"],["Normal"],[60],["Red"],["Female"],["TV"]],
-    [["Hellborn"],["Pet"],["Unknown"],["Black"],["Female"],["Hotel","Lucyfer"]],
-    [["Sinner"],["Morningstar"],["A Lot"],["Black"],["Female"],["Lucyfer","Exorcist"]],
-    [["Sinner"],["Normal"],[130],["Red"],["Female"],["Alastor","Mammon"]],
-    [["Saint"],["Normal"],[90],["White","Pink"],["Female"],["Heaven"]],
-    [["Heavenborn"],["Seraph"],["Unknown"],["White","Gray"],["Female"],["Heaven"]],
-    [["Saint"],["Angel"],[2050],["White","Blue"],["Male"],["Heaven"]],
-    [["Sinner"],["Normal"],[140],["Gray"],["Male"],["TV"]],
-    [["Sinner"],["Normal"],[140],["Black"],["Male"],["Vees"]],
-    [["Heavenborn"],["Fallen Angel"],["Unknown"],["Red","Gray"],["Female"],["Hotel","Exorcist"]],
-    [["Sinner"],["Overlord"],[500],["Black","Green"],["Male"],["Zestial"]],
-    [["Hellborn"],["Morningstar"],[200],["Red","Black"],["Female"],["Hotel"]],
-];
-*/
 const both = [
     [["Earth"],["Sinner"],[60],["Red"],["Female"],["TV"]],
     [["Earth"],["Sinner"],[140],["Gray"],["Male"],["TV"]],
@@ -266,7 +231,7 @@ const hbn = [];
 const hb = [
 ];
 
-const hhn = ["Alastor","Angel Dust","Razzle & Dazzle","Sir Pentious","Vox","Rosie","Velvette","Valentino","Cherri Bomb","Husk","Adam","Lute","Niffty","Lucyfer", "Baxter", "Carmilla Carmine", "Egg Boiz", "Emily", "Fat Nuggets", "Katie Killjoy", "KeeKee", "Lilith", "Mimzy", "Molly", "Sera", "St. Peter", "Travis","Vaggie", "Zestial","Charlie"]
+const hhn = ["Alastor","Angel Dust","Razzle & Dazzle","Sir Pentious","Vox","Rosie","Velvette","Valentino","Cherri Bomb","Husk","Adam","Lute","Niffty","Lucyfer", "Baxter", "Carmilla Carmine", "Egg Boiz", "Emily", "Fat Nuggets", "Katie Killjoy", "KeeKee", "Lilith", "Mimzy", "Molly", "Sera", "St. Peter","Vaggie", "Zestial","Charlie"]
 
 const hh = [
     [["Earth"],["Sinner","Overlord"],[110],["Red"],["Male"],["Hotel","Alastor"]],
