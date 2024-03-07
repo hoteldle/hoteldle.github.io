@@ -235,7 +235,7 @@ const both = [
     [["Sinner"],["Doll"],[140],["Gray"],["Male"],["TV"]], //Tom Trench
     [["Sinner"],["Owl"],[140],["Black"],["Male"],["Vees"]], //Travis
 ]
-const hbn = ["Andrealphus", "Asmodeus", "Barbie Wire", "Beelzebub", "Blitzo", "Bombproof", "Burnie Burnz", "Cash Buckzo", "Catfish Monster", "Chazwick Thurman", "Cletus", "Collin", "Jimmy", "Crimson", "Deerie", "Eddie", "Fizzarolli", "Glitz & Glam", "Joe", "Keenie", "Lin", "Loona", "Loopty Goopty", "Lyle Lipton", "Mammon", "Martha", "Millie", "Moxxie", "Moxxie's Mom", "Mrs. Mayberry", "Octavia", "Paimon", "Ralphie", "Robo Fizz", "Sallie May", "Stella", "Stolas", "Striker", "Verosika Mayday", "Vortex", "Wally Wackford", "Verosika's Crew"
+const hbn = ["Andrealphus", "Asmodeus", "Barbie Wire", "Beelzebub", "Blitzo", "Bombproof", "Burnie Burnz", "Cash Buckzo", "Catfish Monster", "Chazwick Thurman", "Cletus", "Collin", "Jimmy", "Crimson", "Deerie", "Eddie", "Fizzarolli", "Glitz & Glam", "Joe", "Keenie", "Lin", "Loona", "Loopty Goopty", "Lyle Lipton", "Mammon", "Martha", "Millie", "Moxxie", "Moxxie\'s Mom", "Mrs. Mayberry", "Octavia", "Paimon", "Ralphie", "Robo Fizz", "Sallie May", "Stella", "Stolas", "Striker", "Verosika Mayday", "Vortex", "Wally Wackford", "Verosika's Crew"
 ];
 
 const hb = [
