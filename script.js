@@ -234,48 +234,48 @@ const hbn = ["Andrealphus", "Asmodeus", "Barbie Wire", "Beelzebub", "Blitzo", "B
 ];
 
 const hb = [
-    [["Ars Goetia","Demon"],["Owl"],["-"],["White","Blue"],["Male"],["Ars Goetia"]], //Andrealphus
+    [["Ars Goetia","Demon"],["Owl"],["Unknown"],["White","Blue"],["Male"],["Ars Goetia"]], //Andrealphus
     [["Seven Deadly Sins"],["XD"],["Old As Hell"],["Red","Blue","Purple"],["Male"],["Seven Deadly Sins","Lust"]], //Asmodeus
-    [["Demon"],["Imp"],["-"],["Red","Black"],["Female"],["Camp Ivannakummore"]], //Barbie Wire
-    [["Seven Deadly Sins"],["Bee","Hellhound"],["-"],["Yellow","Blue","Pink"],["Female"],["Seven Deadly Sins","Gluttony"]], //Beelzebub
-    [["Demon"],["Imp"],["-"],["Red","Black","White"],["Male"],["I.M.P."]], //Blitzo
-    [["Wildlife","Demon"],["Horse"],["-"],["Red","Black"],["Male"],["Striker"]], //Bombproof
-    [["Demon"],["Imp"],["-"],["Red","Green"],["Male"],["Fizzarolli"]], //Burnie Burnz
-    [["Demon"],["Imp"],["-"],["Red","Black"],["Male"],["Fizzarolli"]], //Cash Buckzo
+    [["Demon"],["Imp"],["Unknown"],["Red","Black"],["Female"],["Camp Ivannakummore"]], //Barbie Wire
+    [["Seven Deadly Sins"],["Bee","Hellhound"],["Unknown"],["Yellow","Blue","Pink"],["Female"],["Seven Deadly Sins","Gluttony"]], //Beelzebub
+    [["Demon"],["Imp"],["Unknown"],["Red","Black","White"],["Male"],["I.M.P."]], //Blitzo
+    [["Wildlife","Demon"],["Horse"],["Unknown"],["Red","Black"],["Male"],["Striker"]], //Bombproof
+    [["Demon"],["Imp"],["Unknown"],["Red","Green"],["Male"],["Fizzarolli"]], //Burnie Burnz
+    [["Demon"],["Imp"],["Unknown"],["Red","Black"],["Male"],["Fizzarolli"]], //Cash Buckzo
     [["Wildlife"],["Fish"],[10],["Gray","Blue"],["Unknown"],["Verosika Mayday"]], //Catfish Monster
-    [["Demon"],["Fish"],["-"],["Blue"],["Male"],["Crimson Family"]], //Chazwick Thurman
-    [["Fallen Angel"],["Cherub"],["-"],["White","Pink"],["Male"],["C.H.E.R.U.B."]], //Cletus
-    [["Fallen Angel"],["Cherub"],["-"],["White","Blue"],["Male"],["C.H.E.R.U.B."]], //Collin
+    [["Demon"],["Fish"],["Unknown"],["Blue"],["Male"],["Crimson Family"]], //Chazwick Thurman
+    [["Fallen Angel"],["Cherub"],["Unknown"],["White","Pink"],["Male"],["C.H.E.R.U.B."]], //Cletus
+    [["Fallen Angel"],["Cherub"],["Unknown"],["White","Blue"],["Male"],["C.H.E.R.U.B."]], //Collin
     [["Human"],["Human"],[19],["Green","Brown"],["Male"],["Camp Ivannakummore"]], //Jimmy
-    [["Demon"],["Imp"],["-"],["Red","Blue"],["Male"],["Crimson Family","Greed"]], //Crimson
-    [["Angel"],["Cherub"],["-"],["Blue","Brown"],["Female"],["C.H.E.R.U.B."]], //Deerie
+    [["Demon"],["Imp"],["Unknown"],["Red","Blue"],["Male"],["Crimson Family","Greed"]], //Crimson
+    [["Angel"],["Cherub"],["Unknown"],["Blue","Brown"],["Female"],["C.H.E.R.U.B."]], //Deerie
     [["Human"],["Human"],[10],["Blue","Orange"],["Male"],["-"]], //Eddie
-    [["Demon"],["Imp","Artificial","Clown"],["-"],["Red","White","Blue"],["Male"],["Mammon","Asmodeus","Greed","Lust"]], //Fizzarolli
-    [["Demon"],["Fish","Clown"],["-"],["Blue"],["Female"],["Mammon","Greed"]], //Glitz & Glam
-    [["Demon"],["Imp"],["-"],["Red"],["Male"],["Wrath"]], //Joe
-    [["Fallen Angel"],["Cherub"],["-"],["White","Yellow"],["Female"],["C.H.E.R.U.B."]], //Keenie
-    [["Demon"],["Imp"],["-"],["Red"],["Female"],["Wrath"]], //Lin
+    [["Demon"],["Imp","Artificial","Clown"],["Unknown"],["Red","White","Blue"],["Male"],["Mammon","Asmodeus","Greed","Lust"]], //Fizzarolli
+    [["Demon"],["Fish","Clown"],["Unknown"],["Blue"],["Female"],["Mammon","Greed"]], //Glitz & Glam
+    [["Demon"],["Imp"],["Unknown"],["Red"],["Male"],["Wrath"]], //Joe
+    [["Fallen Angel"],["Cherub"],["Unknown"],["White","Yellow"],["Female"],["C.H.E.R.U.B."]], //Keenie
+    [["Demon"],["Imp"],["Unknown"],["Red"],["Female"],["Wrath"]], //Lin
     [["Demon"],["Hellhound"],[22],["White","Black"],["Female"],["I.M.P."]], //Loona
     [["Sinner"],["Artificial"],[40],["Red","Black","Green"],["Male"],["Wally Wackford"]], //Loopty Goopty
     [["Sinner"],["Artificial"],[40],["Black","Green"],["Male"],["Wally Wackford"]], //Lyle Lipton
     [["Seven Deadly Sins"],["Clown"],["Old As Hell"],["Black","Green"],["Male"],["Mammon", "Greed", "Fizzarolli"]], //Mammon
-    [["Human"],["Human"],["-"],["White","Blue","Pink"],["Female"],["Satan","Cannibal"]], //Martha
+    [["Human"],["Human"],["Unknown"],["White","Blue","Pink"],["Female"],["Satan","Cannibal"]], //Martha
     [["Demon"],["Imp"],[27],["Red","Black"],["Female"],["I.M.P.","Wrath"]], //Millie
-    [["Demon"],["Imp"],["-"],["Red","Black"],["Male"],["I.M.P.","Greed", "Wrath"]], //Moxxie
-    [["Demon"],["Imp"],["-"],["Red","Blue"],["Family"],["Crimson Family","Wrath"]], //Moxxie's Mom
-    [["Sinner"],["Goat"],["-"],["Black","Purple"],["Female"],["-"]], //Mrs. Mayberry
+    [["Demon"],["Imp"],["Unknown"],["Red","Black"],["Male"],["I.M.P.","Greed", "Wrath"]], //Moxxie
+    [["Demon"],["Imp"],["Unknown"],["Red","Blue"],["Family"],["Crimson Family","Wrath"]], //Moxxie's Mom
+    [["Sinner"],["Goat"],["Unknown"],["Black","Purple"],["Female"],["-"]], //Mrs. Mayberry
     [["Demon"],["Owl"],[17],["Black","Pink"],["Female"],["Ars Goetia"]], //Octavia
-    [["Ars Goetia","Demon"],["Owl"],["-"],["Red","Black"],["Male"],["Ars Goetia"]], //Paimon
-    [["Human"],["Human"],["-"],["Orange"],["Male"],["Satan","Cannibal"]], //Ralphie
-    [["Demon"],["Artificial"],["-"],["White","Black","Blue","Pink"],["Other"],["Fizzarolli","Greed","Mammon"]], //Robo Fizz
+    [["Ars Goetia","Demon"],["Owl"],["Unknown"],["Red","Black"],["Male"],["Ars Goetia"]], //Paimon
+    [["Human"],["Human"],["Unknown"],["Orange"],["Male"],["Satan","Cannibal"]], //Ralphie
+    [["Demon"],["Artificial"],["Unknown"],["White","Black","Blue","Pink"],["Other"],["Fizzarolli","Greed","Mammon"]], //Robo Fizz
     [["Demon"],["Imp"],[27],["Red","Black"],["Female"],["Wrath"]], //Sallie May
-    [["Demon"],["Owl"],["-"],["White","Gray"],["Female"],["Ars Goetia"]], //Stella
+    [["Demon"],["Owl"],["Unknown"],["White","Gray"],["Female"],["Ars Goetia"]], //Stella
     [["Ars Goetia","Demon"],["Owl"],[30],["Red","White","Black"],["Male"],["Ars Goetia"]], //Stolas
-    [["Demon"],["Imp","Hybrid"],["-"],["Red","White","Black"],["Male"],["Crimson Family"]], //Striker
-    [["Demon"],["Succubus"],["-"],["White","Black","Pink"],["Female"],["Verosika Mayday","Lust"]], //Verosika Mayday
-    [["Demon"],["Hellhound"],["-"],["Black","Gray"],["Male"],["Verosika Mayday","Gluttony"]], //Vortex
-    [["Demon"],["Imp"],["-"],["Red","White","Black"],["Male"],["Wally Wackford"]], //Wally Wackford
-    [["Demon"],["Succubus"],["-"],["Red","White","Black"],["Female","Male"],["Verosika Mayday","Lust"]], //Verosika's Crew
+    [["Demon"],["Imp","Hybrid"],["Unknown"],["Red","White","Black"],["Male"],["Crimson Family"]], //Striker
+    [["Demon"],["Succubus"],["Unknown"],["White","Black","Pink"],["Female"],["Verosika Mayday","Lust"]], //Verosika Mayday
+    [["Demon"],["Hellhound"],["Unknown"],["Black","Gray"],["Male"],["Verosika Mayday","Gluttony"]], //Vortex
+    [["Demon"],["Imp"],["Unknown"],["Red","White","Black"],["Male"],["Wally Wackford"]], //Wally Wackford
+    [["Demon"],["Succubus"],["Unknown"],["Red","White","Black"],["Female","Male"],["Verosika Mayday","Lust"]], //Verosika's Crew
 ];
 
 const hhn = ["Alastor","Angel Dust","Razzle & Dazzle","Sir Pentious","Vox","Rosie","Velvette","Valentino","Cherri Bomb","Husk","Adam","Lute","Niffty","Lucyfer", "Baxter", "Carmilla Carmine", "Egg Boiz", "Emily", "Fat Nuggets", "KeeKee", "Lilith", "Mimzy", "Molly", "Sera", "St. Peter","Vaggie", "Zestial","Charlie","Susan", "Melissa", "Kitty"]
@@ -297,7 +297,7 @@ const hh = [
     [["Seven Deadly Sins"],["Fallen Angel","Morningstar"],["A Lot"],["Red","White"],["Male"],["Seven Deadly Sins","Lucyfer"]], //Lucyfer
     [["Sinner"],["Fish"],[130],["Black","Blue"],["Male"],["Unknown"]], //Baxter
     [["Sinner","Overlord"],["Doll"],["Unknown"],["White","Black"],["Female"],["Carmilla Carmine"]], //Carmilla Carmine
-    [["Demon"],["Artificial"],["-"],["White","Yellow"],["Male"],["Sir Pentious","Hotel"]], //Egg Boyz    
+    [["Demon"],["Artificial"],["Unknown"],["White","Yellow"],["Male"],["Sir Pentious","Hotel"]], //Egg Boyz    
     [["Angel"],["Seraphim"],["Unknown"],["White","Blue"],["Female"],["Heaven"]], //Emily
     [["Wildlife","Demon"],["Pig"],["Unknown"],["Pink"],["Male"],["Hotel"]], //Fat Nuggets
     [["Wildlife","Demon"],["Cat"],["Unknown"],["Black"],["Female"],["Hotel","Lucyfer"]], //KeeKee
@@ -309,9 +309,9 @@ const hh = [
     [["Fallen Angel"],["Exorcist"],["Unknown"],["Red","Gray"],["Female"],["Hotel"]], //Vaggie
     [["Sinner","Overlord"],["Spider"],[500],["Black","Green"],["Male"],["Zestial"]], //Zestial
     [["Demon"],["Morningstar"],[200],["Red","Black"],["Female"],["Hotel"]], //Charlie
-    [["Demon"],["Cannibal"],["-"],["Red","Blue"],["Female"],["Cannibal Town"]], //Susan
-    [["Sinner"],["Doll"],["-"],["Red","White","Purple"],["Female"],["Vees"]], //Melissa
-    [["Demon"],["Artificial"],["-"],["White","Red","Blue"],["Other"],["Fizzarolli","Vees"]], //Kitty
+    [["Demon"],["Cannibal"],["Unknown"],["Red","Blue"],["Female"],["Cannibal Town"]], //Susan
+    [["Sinner"],["Doll"],["Unknown"],["Red","White","Purple"],["Female"],["Vees"]], //Melissa
+    [["Demon"],["Artificial"],["Unknown"],["White","Red","Blue"],["Other"],["Fizzarolli","Vees"]], //Kitty
 ];
 let randomIndex = null;
 let names = [];
