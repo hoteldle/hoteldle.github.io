@@ -234,7 +234,7 @@ const hbn = [];
 const hb = [
 ];
 
-const hhn = ["Alastor","Angel Dust","Razzle & Dazzle","Sir Pentious","Vox","Rosie","Velvette","Valentino","Cherri Bomb","Husk","Adam","Lute","Niffty","Lucyfer", "Baxter", "Carmilla Carmine", "Egg Boiz", "Emily", "Fat Nuggets", "Katie Killjoy", "KeeKee", "Lilith", "Mimzy", "Molly", "Sera", "St. Peter","Vaggie", "Zestial","Charlie"]
+const hhn = ["Alastor","Angel Dust","Razzle & Dazzle","Sir Pentious","Vox","Rosie","Velvette","Valentino","Cherri Bomb","Husk","Adam","Lute","Niffty","Lucyfer", "Baxter", "Carmilla Carmine", "Egg Boiz", "Emily", "Fat Nuggets", "KeeKee", "Lilith", "Mimzy", "Molly", "Sera", "St. Peter","Vaggie", "Zestial","Charlie"]
 
 const hh = [
     [["Earth"],["Sinner","Overlord"],[110],["Red"],["Male"],["Hotel","Alastor"]],
