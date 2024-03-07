@@ -16,6 +16,8 @@ function connectArrays() {
     }
     autocomplete(document.getElementById("name"), names);
     const randomIndex = Math.floor(Math.random() * mainList.length);
+    let lastGuess = null;
+    const usedIndexes = [];
 }
 
 function compareArrays(mainList, userIndex, randomIndex) {
@@ -267,10 +269,7 @@ const hh = [
 let names = [];
 let mainList = [];
 connectArrays()
-const usedIndexes = [];
-let lastGuess = null;
 let output = document.getElementById('Output');
-const randomIndex = Math.floor(Math.random() * mainList.length);
 autocomplete(document.getElementById("name"), names);
 document.getElementById("Button").addEventListener("click", search);
 document.getElementById("name").addEventListener("keydown", function(e) {search()});
