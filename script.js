@@ -18,6 +18,7 @@ function connectArrays() {
     randomIndex = Math.floor(Math.random() * mainList.length);
     lastGuess = null;
     usedIndexes = [];
+    if(mainList.length != names.length){console.log("You Dumbass You Can't Count");}
 }
 
 function compareArrays(mainList, userIndex, randomIndex) {
