@@ -9,6 +9,13 @@
         <div id="Main">
             <img id="logo" src="Logo.png">
             <div id="Center">
+                <div>
+                <select id="Dropdown" onchange="connectArrays()">
+                    <option value="0" selected="selected">Hazbin Hotel & Heluva Boss</option>
+                    <option value="1">Hazbin Hotel</option>
+                    <option value="2">Heluva Boss</option>
+                  </select>
+                </div>
                 <div id="autocomplete">
                     <input type="text" id="name" placeholder="Type character name ..."><button type="button" id="Button">Guess</button>
                 </div>
