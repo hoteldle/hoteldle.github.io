@@ -20,7 +20,7 @@ function connectArrays() {
 }
 function reset() {
     var date = new Date();
-    if(SelMode == 1){
+    if(SelMode == 0){
     randomIndex = seededRandom(mainList.length, Number(String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())));
     } else {
     randomIndex = Math.floor(Math.random() * mainList.length);
