@@ -19,9 +19,15 @@ function connectArrays() {
     if(mainList.length != names.length){console.log("You Dumbass You Can't Count");}
 }
 function reset() {
+    var date = new Date();
+    if(SelMode == 1){
+    randomIndex = seededRandom(mainList.length, Number(String(date.getDate()) + String(date.getMonth()) + String(date.getFullYear())));
+    } else {
     randomIndex = Math.floor(Math.random() * mainList.length);
+    }
     lastGuess = null;
     usedIndexes = [];
+    document.getElementById('Reset').style.visibility = 'hidden';
     document.getElementById('autocomplete').style.display = 'inline-block';
     output.textContent = '';
 }
@@ -66,6 +72,7 @@ function check(mainList,userIndex,randomIndex,output,name){
     }
     if (randomIndex === userIndex) {
         document.getElementById('autocomplete').style.display = 'none';
+        document.getElementById('Reset').style.visibility = 'visible';
     }
     const result = compareArrays(mainList, userIndex, randomIndex);
     const wrapper = document.createElement("div");
@@ -228,6 +235,30 @@ function autocomplete(inp, arr) {
 } 
 
 //------------------------------------------------------------------------------\\
+
+function seededRandom(max,seed) {
+    seed = Math.floor(seed * seed)
+    seed = Math.floor((seed * 9301 + 49297) % 233280);
+    var rnd = seed / 233280;
+ 
+    return Math.floor(rnd * max);
+}
+
+//------------------------------------------------------------------------------\\
+
+function mode() {
+    if(SelMode == 0) {
+        document.getElementById("Switch").innerHTML = "Guess a random character";
+        SelMode = 1;
+        reset();
+    }
+    else {
+        document.getElementById("Switch").innerHTML = "Guess today's character";
+        SelMode = 0;
+        reset();
+    }
+}
+
 const bothn = ["Katie Killjoy","Tom Trench","Travis"];
 
 const both = [
@@ -254,7 +285,7 @@ const hb = [
     [["Human"],["Human"],[19],["Green","Brown"],["Male"],["Camp Ivannakummore"]], //Jimmy
     [["Demon"],["Imp"],["Unknown"],["Red","Blue"],["Male"],["Crimson Family","Greed"]], //Crimson
     [["Angel"],["Cherub"],["Unknown"],["Blue","Brown"],["Female"],["C.H.E.R.U.B."]], //Deerie
-    [["Human"],["Human"],[10],["Blue","Orange"],["Male"],["-"]], //Eddie
+    [["Human"],["Human"],[10],["Blue","Orange"],["Male"],["Unknown"]], //Eddie
     [["Demon"],["Imp","Artificial","Clown"],["Unknown"],["Red","White","Blue"],["Male"],["Mammon","Asmodeus","Greed","Lust"]], //Fizzarolli
     [["Demon"],["Fish","Clown"],["Unknown"],["Blue"],["Female"],["Mammon","Greed"]], //Glitz & Glam
     [["Demon"],["Imp"],["Unknown"],["Red"],["Male"],["Wrath"]], //Joe
@@ -267,8 +298,8 @@ const hb = [
     [["Human"],["Human"],["Unknown"],["White","Blue","Pink"],["Female"],["Satan","Cannibal"]], //Martha
     [["Demon"],["Imp"],[27],["Red","Black"],["Female"],["I.M.P.","Wrath"]], //Millie
     [["Demon"],["Imp"],["Unknown"],["Red","Black"],["Male"],["I.M.P.","Greed", "Wrath"]], //Moxxie
-    [["Demon"],["Imp"],["Unknown"],["Red","Blue"],["Family"],["Crimson Family","Wrath"]], //Moxxie's Mom
-    [["Sinner"],["Goat"],["Unknown"],["Black","Purple"],["Female"],["-"]], //Mrs. Mayberry
+    [["Demon"],["Imp"],["Unknown"],["Red","Blue"],["Female"],["Crimson Family","Wrath"]], //Moxxie's Mom
+    [["Sinner"],["Goat"],["Unknown"],["Black","Purple"],["Female"],["Unknown"]], //Mrs. Mayberry
     [["Demon"],["Owl"],[17],["Black","Pink"],["Female"],["Ars Goetia"]], //Octavia
     [["Ars Goetia","Demon"],["Owl"],["Unknown"],["Red","Black"],["Male"],["Ars Goetia"]], //Paimon
     [["Human"],["Human"],["Unknown"],["Orange"],["Male"],["Satan","Cannibal"]], //Ralphie
@@ -324,8 +355,11 @@ let mainList = [];
 let lastGuess = null;
 let usedIndexes = [];
 let output = document.getElementById('Output');
+let SelMode = 1
 connectArrays()
 document.getElementById("Button").addEventListener("click", search);
+document.getElementById("Switch").addEventListener("click", mode);
+document.getElementById("Reset").addEventListener("click", reset);
 document.getElementById("name").addEventListener("keyup", function(event) {
     if (event.key === "Enter") {
     search();

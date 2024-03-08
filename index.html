@@ -9,7 +9,8 @@
         <div id="Main">
             <img id="logo" src="Logo.png">
             <div id="Center">
-                <div>
+                <div id="Menu">
+                <button type="button" id="Switch">Guess a random character</button>
                 <select id="Dropdown" onchange="connectArrays()">
                     <option value="0" selected="selected">Hazbin Hotel & Heluva Boss</option>
                     <option value="1">Hazbin Hotel</option>
@@ -19,6 +20,8 @@
                 <div id="autocomplete">
                     <input type="text" id="name" placeholder="Type character name ..."><button type="button" id="Button">Guess</button>
                 </div>
+                <button style="visibility: hidden;" type="button" id="Reset">Reset
+                </button>
                 <div id="Categories">
                     <div class="Category"><p>Name</p></div>
                     <div class="Category"><p>Race</p></div>
