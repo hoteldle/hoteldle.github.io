@@ -86,6 +86,7 @@ function check(mainList,userIndex,randomIndex,output,name){
     let tmp2 = document.createTextNode(String(name));
     tmp1.appendChild(tmp2);
     image.appendChild(tmp1);
+    resize_to_fit(tmp1,image);
     for(let i = 0; i < 6; i++){
         const element = document.createElement("div");
         wrapper.appendChild(element);
