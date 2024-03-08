@@ -247,13 +247,13 @@ function seededRandom(max,seed) {
 //------------------------------------------------------------------------------\\
 
 function mode() {
-    if(SelMode == 0) {
-        document.getElementById("Switch").innerHTML = "Guess a random character";
+    if(SelMode == 1) {
+        document.getElementById("Switch").innerHTML = "Guess a random character:";
         SelMode = 1;
         reset();
     }
     else {
-        document.getElementById("Switch").innerHTML = "Guess today's character";
+        document.getElementById("Switch").innerHTML = "Guess today's character:";
         SelMode = 0;
         reset();
     }
@@ -355,7 +355,7 @@ let mainList = [];
 let lastGuess = null;
 let usedIndexes = [];
 let output = document.getElementById('Output');
-let SelMode = 1
+let SelMode = 0
 connectArrays()
 document.getElementById("Button").addEventListener("click", search);
 document.getElementById("Switch").addEventListener("click", mode);
