@@ -247,14 +247,14 @@ function seededRandom(max,seed) {
 //------------------------------------------------------------------------------\\
 
 function mode() {
-    if(SelMode == 0) {
+    if(SelMode == 1) {
         document.getElementById("Switch").innerHTML = "Guess a random character:";
-        SelMode = 1;
+        SelMode = 0;
         reset();
     }
     else {
         document.getElementById("Switch").innerHTML = "Guess today's character:";
-        SelMode = 0;
+        SelMode = 1;
         reset();
     }
 }
