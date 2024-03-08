@@ -27,7 +27,7 @@ function reset() {
     }
     lastGuess = null;
     usedIndexes = [];
-    document.getElementById('Reset').style.visibility = 'hidden';
+    document.getElementById('Reset').style.display = 'none';
     document.getElementById('autocomplete').style.display = 'inline-block';
     output.textContent = '';
 }
@@ -72,7 +72,7 @@ function check(mainList,userIndex,randomIndex,output,name){
     }
     if (randomIndex === userIndex) {
         document.getElementById('autocomplete').style.display = 'none';
-        document.getElementById('Reset').style.visibility = 'visible';
+        document.getElementById('Reset').style.display = 'block';
     }
     const result = compareArrays(mainList, userIndex, randomIndex);
     const wrapper = document.createElement("div");
