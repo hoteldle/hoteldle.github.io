@@ -72,7 +72,7 @@ function check(mainList,userIndex,randomIndex,output,name){
     }
     if (randomIndex === userIndex) {
         document.getElementById('autocomplete').style.display = 'none';
-        document.getElementById('Reset').style.display = 'block';
+        document.getElementById('Reset').style.display = 'relative';
     }
     const result = compareArrays(mainList, userIndex, randomIndex);
     const wrapper = document.createElement("div");
