@@ -272,10 +272,10 @@ const hbn = ["Andrealphus", "Asmodeus", "Barbie Wire", "Beelzebub", "Blitzo", "B
 
 const hb = [
     [["Ars Goetia","Demon"],["Owl"],["Unknown"],["White","Blue"],["Male"],["Ars Goetia"]], //Andrealphus
-    [["Seven Deadly Sins"],["XD"],["Old As Hell"],["Red","Blue","Purple"],["Male"],["Seven Deadly Sins","Lust"]], //Asmodeus
+    [["Seven Deadly Sins"],["Flame"],["Old As Hell"],["Red","Blue","Purple"],["Male"],["Seven Deadly Sins","Lust"]], //Asmodeus
     [["Demon"],["Imp"],["Unknown"],["Red","Black"],["Female"],["Camp Ivannakummore"]], //Barbie Wire
     [["Seven Deadly Sins"],["Bee","Hellhound"],["Unknown"],["Yellow","Blue","Pink"],["Female"],["Seven Deadly Sins","Gluttony"]], //Beelzebub
-    [["Demon"],["Imp"],["Unknown"],["Red","Black","White"],["Male"],["I.M.P."]], //Blitzo
+    [["Demon"],["Imp"],["Unknown"],["Red","White","Black"],["Male"],["I.M.P."]], //Blitzo
     [["Wildlife","Demon"],["Horse"],["Unknown"],["Red","Black"],["Male"],["Striker"]], //Bombproof
     [["Demon"],["Imp"],["Unknown"],["Red","Green"],["Male"],["Fizzarolli"]], //Burnie Burnz
     [["Demon"],["Imp"],["Unknown"],["Red","Black"],["Male"],["Fizzarolli"]], //Cash Buckzo
@@ -320,7 +320,7 @@ const hhn = ["Alastor","Angel Dust","Razzle & Dazzle","Sir Pentious","Vox","Rosi
 const hh = [
     [["Sinner","Overlord"],["Deer"],[110],["Red"],["Male"],["Hotel","Alastor"]], //Alastor
     [["Sinner"],["Spider"],[90],["White"],["Male"],["Hotel","Vees"]], //Angel Dust
-    [["Wildlife","Demon"],["Goat"],["Unknown"],["Red"],["Male"],["Lucyfer","Hotel"]], //Razzle Dazzle
+    [["Wildlife","Demon"],["Goat"],["Unknown"],["Red"],["Male"],["Hotel","Lucyfer"]], //Razzle Dazzle
     [["Sinner","Winner"],["Snake"],[150],["Red","Black"],["Male"],["Hotel","Vees","Sir Pentious"]], //Sir Pentious
     [["Sinner","Overlord"],["TV"],[100],["Blue"],["Male"],["Vees"]], //Vox
     [["Overlord"],["Cannibal","Doll"],["Unknown"],["Red","White"],["Female"],["Cannibal Town"]], //Rosie
